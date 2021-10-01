@@ -1,0 +1,146 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    transition: all .3s ease;
+    color: rgb(70, 67, 67);
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    background: rgba(204, 204, 204, 0.445);
+    min-height: 100vh;
+}
+
+.Edith{
+    display: flex;
+    flex-direction: column;
+    width: 98%;
+    max-width: 700px;
+    background: #fff;
+    padding: 0px 5px 10px 5px;
+    min-height: 100vh;
+}
+
+.Edith .header{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   min-height: 10vh;
+   border-bottom: 2px solid #ccc;
+  
+}
+
+.Edith .header h1{
+    color: hsl(240, 99%, 46%);
+    font-size: 19px;
+    font-weight: 800;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+.Edith .header h4{
+    background: #ccc;
+    padding: 5px 15px;
+    border-radius: 10px;
+}
+.Edith .header h4:hover{
+    background: #fff;
+    border: 1px solid hsla(240, 99%, 46%, 0.397);
+    cursor: pointer;
+}
+
+.main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 3rem;
+    background: #fff;
+    width: 100%;
+    min-height: 70vh;
+}
+
+.main form{
+    margin-top: 1.5rem;
+    border: 1px solid #ccc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    max-width: 30rem;
+    width: 100%;
+}
+
+.main form .field{
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;  
+   margin-top: .5rem;
+}
+
+.submit{
+    width: 94%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: darkblue;
+    margin: 10px auto;
+    
+}
+.submit input{
+    background: none;
+    border: none;
+    justify-content: center;
+    align-items: center ;
+    min-height: 5vh;
+    width: 100%;
+    color: #fff;
+    font-size: 19px;
+    font-weight: 700;
+}
+.main form .field .inner-field{
+    display: flex;
+    flex-direction: column;
+    margin: .5rem auto;
+    width: 95%;
+}
+.main form .field .inner-field:last-child{
+    margin-left: .5rem;
+}
+.main form .field .inner-field input{
+    height: 5vh;
+    margin-top: .3rem;
+    outline: none;
+    font-size: 17px;
+    font-weight: 300;
+}
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media(max-width:500px){
+    .main form .field{
+        width: 100%;
+        display: flex;
+        flex-direction: column; 
+    }
+    .main form .field .inner-field{
+        display: flex;
+        flex-direction: column;
+    }
+    .main form .field .inner-field:last-child{
+        margin-left: auto;
+    }
+    .main form .field .inner-field{
+        width: 95%;
+    }
+}
